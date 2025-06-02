@@ -1,11 +1,24 @@
 <!--Lesson 20-->
-<div id="info-box-full">
-<img src="images/giraffe-large.jpg>
-<h3>WE'D LOVE TO HERE FROM YOU</h3>
-<p>We always strive to do best, so your feedback is very important to us.
-Please fill in the form below</p>
-<input type="text" placeholder="Your name" id="name">
-<input type="text" placeholder="Your email" id="email">
-<textarea placeholder="Type your message here"></textarea>
-<a class="button" href="message-received.html">SUBMIT</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pine City Zoo - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info-box-full">
+        <img src="images/giraffe-large.jpg" alt="Giraffe" />
+        <h3>WE'D LOVE TO HEAR FROM YOU</h3>
+        <p>We always strive to do our best, so your feedback is very important to us.<br>
+        Please fill in the form below</p>
+        <form action="message-received.html" method="get">
+            <input type="text" placeholder="Your name" id="name" name="name">
+            <input type="text" placeholder="Your email" id="email" name="email">
+            <textarea placeholder="Type your message here" name="message"></textarea>
+            <button class="button" type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
