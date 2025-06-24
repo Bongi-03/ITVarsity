@@ -1,4 +1,30 @@
-<script>
-document.getElementById("heading1").innerHTML = "This is JavaScript!";
-document.getElementById("paragraph1").innerHTML = "I'm having fun!";
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1 id="heading1"></h1>
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+    <script>
+        var text1 = "Hello everyone on the planet";
+        var text2 = "I love learning JS!";
+        var text3 = "JS is awesome!";
+        var numA = 7;
+        var numB = 10;
+
+        // Show text1 in heading1
+        document.getElementById("heading1").innerHTML = text1;
+
+        // Show text2 and text3 in paragraph1
+        document.getElementById("paragraph1").innerHTML = text2 + " " + text3;
+
+        // Show multiplication in paragraph2
+        document.getElementById("paragraph2").innerHTML = numA + " x " + numB + " = " + (numA * numB);
+    </script>
+</body>
+</html>
